@@ -203,4 +203,29 @@ function torch.multinomialAlias(output, state)
    return output
 end
 
+-- P9ML Membrane Computing Integration
+-- Load P9ML components for emergent agentic cognitive grammar
+pcall(function()
+   torch.P9ML = require('P9ML')
+   torch.P9MLUtils = require('P9MLUtils')
+   torch.P9MLMembrane = require('P9MLMembrane')
+   torch.P9MLNamespace = require('P9MLNamespace')
+   torch.P9MLCognitiveKernel = require('P9MLCognitiveKernel')
+   
+   -- Initialize P9ML system if needed
+   function torch.initP9ML(config)
+      return torch.P9ML.init(config)
+   end
+   
+   -- Convenience wrapper for creating membrane-wrapped modules
+   function torch.wrapWithMembrane(module, config)
+      if not torch.P9ML.initialized then
+         torch.P9ML.init()
+      end
+      return torch.P9ML.wrapModule(module, config)
+   end
+   
+   print("✓ P9ML Membrane Computing system loaded")
+end)
+
 return torch
