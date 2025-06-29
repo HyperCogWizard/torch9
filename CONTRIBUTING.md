@@ -1,29 +1,42 @@
-# Contributing to Torch7 Core (torch7, nn, cutorch, cunn)
+# Contributing to Torch9 with P9ML
 
-Thanks a lot! There are plenty of ways you can help!
+Thanks for your interest in contributing to Torch9 and the P9ML cognitive computing system! There are many ways you can help advance this innovative project.
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+Please take a moment to review this document to make the contribution process effective for everyone involved.
 
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
+Following these guidelines helps communicate respect for the developers' time and ensures productive collaboration on this open source cognitive computing project.
+
+## About Torch9 and P9ML
+
+Torch9 extends the classical Torch7 framework with **P9ML (P9 Membrane Layer)** - a revolutionary system implementing membrane computing paradigms within neural substrates. Key areas for contribution include:
+
+- **Core P9ML System**: Membrane computing implementation
+- **Cognitive Grammar**: Prime factorization-based tensor analysis
+- **Hypergraph Topology**: Cognitive similarity and clustering
+- **Evolution Engine**: Adaptive membrane behavior
+- **Documentation**: Technical guides and tutorials
+- **Performance**: Optimization and scalability improvements
 
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/torch/torch7/issues) is
-the preferred channel for [bug reports](#bugs), [features requests](#features)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
+The issue tracker is the preferred channel for [bug reports](#bugs), [feature requests](#features), and [submitting pull requests](#pull-requests). Please respect the following restrictions:
 
-* Please **do not** use the issue tracker for personal support requests (use
-  [mailing-list](https://groups.google.com/forum/#!forum/torch7)).
+* Please **do not** use the issue tracker for personal support requests. For P9ML questions, consult the documentation or start a discussion.
 
-* Please **do not** open issues regarding the code in a torch package 
-  outside the core. For example don't open issues about the 
-  REPL in the torch7 issue tracker, use the trepl issue tracker for that.
+* Please **do not** open issues regarding code outside the torch9/P9ML core. For specific torch packages, use their respective issue trackers.
+
+* Please **do not** derail or troll issues. Keep discussions on topic and respect others' opinions.
+
+### P9ML-Specific Issues
+
+When reporting issues related to P9ML functionality, please include:
+
+* **P9ML Version**: System initialization details
+* **Membrane Configuration**: Relevant configuration parameters  
+* **Cognitive State**: Status information from `P9ML.status()`
+* **Tensor Shapes**: Input tensor dimensions and types
+* **Evolution State**: Membrane evolution parameters if relevant
 
 <a name="bugs"></a>
 ## Bug reports
